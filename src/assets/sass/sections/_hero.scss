@@ -1,0 +1,62 @@
+// Banner Section
+.banner-section {
+	padding: 250px 0 120px;
+	// min-height: 100vh;
+	.banner-video {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: -2;
+	}
+	.container {
+		position: relative;
+		z-index: 1;
+	}
+	&::before {
+		@extend %p-set;
+		background-color: hsl(var(--accent) / 0.75);
+		z-index: -1;
+	}
+}
+
+.banner-content {
+	max-width: 650px;
+	.title {
+		span {
+			@extend %gradient-color;
+			background-image: var(--gradient-base);
+		}
+	}
+}
+.banner-thumb {
+	width: calc(100% - 650px);
+	position: relative;
+	z-index: 1;
+}
+.banner-shape-wrapper {
+    width: 50%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    opacity: .7;
+}
+.banner-shape {
+	position: absolute;
+	right: 0;
+	top: 40%;
+	z-index: -1;
+	animation: lefToRight 15s linear infinite;
+}
+.banner-shape2 {
+	position: absolute;
+	right: 0;
+	top: 40%;
+	z-index: -1;
+	animation: lefToRight2 15s linear infinite;
+	transform: translateX(100%);
+}
+// Banner Section

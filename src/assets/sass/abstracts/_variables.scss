@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Latin:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500&display=swap");
+
+:root {
+	// Fonts
+	--heading-font: "Anek Latin", sans-serif;
+	--body-font: "Open Sans", sans-serif;
+
+	//Colors
+	--heading: 232 33% 31%;
+	--body: 223 22% 41%;
+	--border: 0 0% 90%;
+
+	color: hsl(256, 72%, 11%);
+	color: hsl(168, 99%, 35%);
+	color: hsl(342, 100%, 56%);
+	// Base Color Shade
+	--base-h: 342;
+	--base-s: 100%;
+	--base-l: 55%;
+	--base: var(--base-h) var(--base-s) var(--base-l);
+
+	
+	--base-100: var(--base-h) var(--base-s) calc(var(--base-l) + 20%);
+	--base-200: var(--base-h) var(--base-s) calc(var(--base-l) + 15%);
+	--base-300: var(--base-h) var(--base-s) calc(var(--base-l) + 10%);
+	--base-400: var(--base-h) var(--base-s) calc(var(--base-l) + 5%);
+	--base-500: var(--base-h) var(--base-s) calc(var(--base-l) - 5%);
+	--base-600: var(--base-h) var(--base-s) calc(var(--base-l) - 8%);
+	--base-700: var(--base-h) var(--base-s) calc(var(--base-l) - 10%);
+	--base-800: var(--base-h) var(--base-s) calc(var(--base-l) - 15%);
+	--base-900: var(--base-h) var(--base-s) calc(var(--base-l) - 20%);
+	
+	--gradient-base: linear-gradient(215deg, hsl(var(--base)) 10%, hsl(Var(--base-700)) 100%);
+
+	// Accent Color Shade
+	--accent-h: 256;
+	--accent-s: 72%;
+	--accent-l: 11%;
+	--accent-50: var(--accent-h) var(--accent-s) calc(var(--accent-l) + 25%);
+	--accent-100: var(--accent-h) var(--accent-s) calc(var(--accent-l) + 20%);
+	--accent-200: var(--accent-h) var(--accent-s) calc(var(--accent-l) + 15%);
+	--accent-300: var(--accent-h) var(--accent-s) calc(var(--accent-l) + 10%);
+	--accent-400: var(--accent-h) var(--accent-s) calc(var(--accent-l) + 5%);
+	--accent: var(--accent-h) var(--accent-s) var(--accent-l);
+	--accent-600: var(--accent-h) var(--accent-s) calc(var(--accent-l) - 5%);
+	--accent-700: var(--accent-h) var(--accent-s) calc(var(--accent-l) - 10%);
+	--accent-800: var(--accent-h) var(--accent-s) calc(var(--accent-l) - 15%);
+	--accent-900: var(--accent-h) var(--accent-s) calc(var(--accent-l) - 20%);
+
+	--primary: 245 82% 67%;
+	--secondary: 210 7% 56%;
+	--success: 147 67% 47%;
+	--danger: 360 78% 62%;
+	--warning: 29 100% 63%;
+	--info: 200 90% 53%;
+	--dark: 206 70% 11%;
+	--white: 0 0% 100%;
+
+	// Light Color Shade
+	--light-h: 238;
+	--light-s: 33%;
+	--light-l: 97%;
+	--light-50: var(--light-h) var(--light-s) calc(var(--light-l) + 33%);
+	--light-100: var(--light-h) var(--light-s) calc(var(--light-l) + 20%);
+	--light-200: var(--light-h) var(--light-s) calc(var(--light-l) + 15%);
+	--light-300: var(--light-h) var(--light-s) calc(var(--light-l) + 10%);
+	--light-400: var(--light-h) var(--light-s) calc(var(--light-l) + 2%);
+	--light: var(--light-h) var(--light-s) var(--light-l);
+	--light-600: var(--light-h) var(--light-s) calc(var(--light-l) - 2%);
+	--light-700: var(--light-h) var(--light-s) calc(var(--light-l) - 10%);
+	--light-800: var(--light-h) var(--light-s) calc(var(--light-l) - 15%);
+	--light-900: var(--light-h) var(--light-s) calc(var(--light-l) - 20%);
+}

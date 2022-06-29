@@ -1,0 +1,35 @@
+.pagination {
+	@extend %flex;
+	justify-content: center;
+	gap: 12px;
+	.page-item {
+		text-align: center;
+		a,
+		span {
+			font-weight: 600;
+			width: 45px;
+			height: 45px;
+			line-height: 45px;
+			padding: 0;
+			border-radius: 50% !important;
+			border-color: hsl(var(--border));
+			box-shadow: none;
+		}
+		&.active,
+		&:hover {
+			span,
+			a {
+				color: hsl(var(--white));
+				border-color: transparent;
+			}
+		}
+		&.disabled {
+			cursor: no-drop !important;
+			span,
+			a {
+				background: hsl(var(--dark) / 0.1);
+				border: none;
+			}
+		}
+	}
+}
