@@ -1,0 +1,13 @@
+.section-header {
+    margin-bottom: 50px;
+    @include breakpoint(max-sm) {
+        margin-bottom: 40px;
+    }
+    &__title {
+        margin-bottom: 15px;
+    }
+    &__text {
+        margin-top: 15px;
+        margin-bottom: 25px;
+    }
+}

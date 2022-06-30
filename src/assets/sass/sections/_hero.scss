@@ -1,13 +1,24 @@
 // Banner Section
 .banner-section {
 	padding: 250px 0 120px;
-	// min-height: 100vh;
+	@include breakpoint(max-xxl) {
+		padding-top: 200px;
+	}
+	@include breakpoint(max-lg) {
+		padding-top: 150px;
+	}
+	@include breakpoint(max-sm) {
+		padding: 110px 0 80px;
+	}
 	.banner-video {
 		position: absolute;
 		top: 0;
-		left: 0;
-		width: 100%;
+		left: 50%;
+		transform: translateX(-50%);
+		height: 100%;
+		min-width: 100%;
 		z-index: -2;
+		object-fit: cover;
 	}
 	.container {
 		position: relative;
@@ -15,17 +26,30 @@
 	}
 	&::before {
 		@extend %p-set;
-		background-color: hsl(var(--accent) / 0.75);
+		background-color: hsl(var(--accent) / 0.8);
 		z-index: -1;
 	}
 }
 
 .banner-content {
 	max-width: 650px;
+	@include breakpoint(max-xl) {
+		max-width: 500px;
+	}
+	@include breakpoint(max-lg) {
+		text-align: center;
+		max-width: 650px;
+		margin-inline: auto;
+	}
 	.title {
 		span {
 			@extend %gradient-color;
 			background-image: var(--gradient-base);
+		}
+	}
+	.banner-text {
+		@include breakpoint(xl) {
+			font-size: 18px;
 		}
 	}
 }
@@ -33,16 +57,22 @@
 	width: calc(100% - 650px);
 	position: relative;
 	z-index: 1;
+	@include breakpoint(max-xl) {
+		width: calc(100% - 500px);
+	}
 }
 .banner-shape-wrapper {
-    width: 50%;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 50%;
-    height: 100%;
-    overflow: hidden;
-    opacity: .7;
+	width: 50%;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 50%;
+	height: 100%;
+	overflow: hidden;
+	opacity: 0.7;
+	@include breakpoint(max-xxl) {
+		width: 40%;
+	}
 }
 .banner-shape {
 	position: absolute;
