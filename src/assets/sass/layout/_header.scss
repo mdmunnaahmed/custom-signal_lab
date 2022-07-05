@@ -8,6 +8,7 @@
 	&.sticky {
 		background-color: hsl(var(--accent));
 		box-shadow: 0 3px 15px hsl(var(--dark) / 0.1);
+		border-bottom: 1px solid hsl(var(--white) / 0.15)
 	}
 }
 .header-bottom-area {

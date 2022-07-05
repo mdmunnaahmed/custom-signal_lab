@@ -13,11 +13,150 @@
 		font-size: 15px;
 	}
 }
+.about-thumb {
+	direction: rtl;
+	img {
+		object-fit: cover;
+		direction: rtl;
+	}
+}
+.about-content {
+	background: hsl(var(--accent));
+}
+.about-list {
+	max-width: 500px;
+	.ico-thumb {
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+		font-size: 24px;
+		display: grid;
+		place-items: center;
+		color: hsl(var(--base));
+		background-color: hsl(var(--accent-200));
+		img {
+			height: 100%;
+			width: 100%;
+			object-fit: contain;
+		}
+	}
+	.content {
+		width: calc(100% - 60px);
+		padding-left: 15px;
+		.title {
+			margin-bottom: 5px;
+		}
+		p {
+			color: hsl(var(--white) / 0.8);
+		}
+	}
+}
 // About Section
 
-
-.custom-progress circle {
-	fill: none;
-	stroke: url(#GradientColor);
-	stroke-width: 5px;
+// Counter Section
+.counter-section {
+	&::before {
+		@extend %p-set;
+		background: hsl(var(--accent) / 0.75);
+		top: 0;
+		left: 0;
+	}
+	.container {
+		position: relative;
+		z-index: 1;
+	}
 }
+.counter-item {
+	text-align: center;
+	&__icon {
+		width: 45px;
+		height: 45px;
+		font-size: 20px;
+		color: hsl(var(--white));
+		position: relative;
+		z-index: 1;
+		margin: 0 auto 25px;
+		@include breakpoint(xxl) {
+			font-size: 24px;
+			width: 50px;
+			height: 50px;
+		}
+		&::before {
+			@extend %p-set;
+			background: hsl(var(--base));
+			transform: rotate(45deg);
+			z-index: -1;
+		}
+	}
+	.counter {
+		font-size: 42px;
+		@include breakpoint(xxl) {
+			font-size: 48px;
+		}
+	}
+}
+// Counter Section
+
+// Forex Signals Section
+.experience-card {
+	padding: 15px;
+	background: hsl(var(--accent-400));
+	box-shadow: 0 0 15px hsl(var(--dark) / 0.15);
+	z-index: 1;
+	position: relative;
+	@include breakpoint(sm) {
+		max-width: 300px;
+		position: absolute;
+		bottom: -30px;
+		right: -30px;
+		border: 10px solid hsl(var(--white));
+	}
+}
+// Forex Signals Section
+
+// Plan Section
+.plan-section {
+	&::before {
+		@extend %p-set;
+		background: hsl(var(--accent) / 0.75);
+	}
+	.container {
+		position: relative;
+		z-index: 1;
+	}
+}
+
+.plan-item {
+	border-radius: 15px;
+	background: hsl(var(--white));
+	border-top: 8px solid hsl(var(--base));
+	padding: 20px;
+
+	@include breakpoint(sm) {
+		padding: 40px;
+	}
+	@include breakpoint(xl) {
+		padding: 20px;
+		border-right: 1px solid hsl(var(--base));
+	}
+	@include breakpoint(xxl) {
+		padding: 30px;
+	}
+	&__header {
+		text-align: center;
+		margin-bottom: 20px;
+		.plan-price {
+			font-size: 42px;
+			@include breakpoint(xl) {
+				font-size: 40px;
+			}
+			@include breakpoint(xxl) {
+				font-size: 46px;
+			}
+		}
+	}
+	&__footer {
+		margin-top: 25px;
+	}
+}
+// Plan Section

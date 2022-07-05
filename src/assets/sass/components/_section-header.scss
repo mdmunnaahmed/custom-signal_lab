@@ -1,13 +1,29 @@
 .section-header {
-    margin-bottom: 50px;
-    @include breakpoint(max-sm) {
-        margin-bottom: 40px;
-    }
-    &__title {
-        margin-bottom: 15px;
-    }
-    &__text {
-        margin-top: 15px;
-        margin-bottom: 25px;
-    }
+	margin-bottom: 40px;
+	@include breakpoint(md) {
+		margin-bottom: 45px;
+	}
+	&__title {
+		margin-bottom: 15px;
+		&.style--two {
+			position: relative;
+			&::before {
+				@extend %p-set;
+                width: 75px;
+				border-bottom: 3px solid hsl(var(--base));
+                top: 5px;
+			}
+		}
+	}
+	&__text {
+		margin-top: 15px;
+		margin-bottom: 25px;
+	}
+	p {
+		margin-top: 18px;
+		@include breakpoint(xl) {
+			margin-top: 20px;
+
+		}
+	}
 }

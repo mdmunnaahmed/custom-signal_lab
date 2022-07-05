@@ -157,3 +157,15 @@ $(".menu li a").each(function () {
 		$(this).addClass("active");
 	}
 });
+
+let num_1 = 5;
+let num_2 = 3;
+let num = "";
+for (num = num_2; num > 1; num--) {
+	if (num_1 % num == 0 && num_2 % num == 0) {
+		num_1 = num_1 / num;
+		num_2 = num_2 / num;
+	}
+}
+var ratio = num_1 + ":" + num_2;
+console.log(ratio);

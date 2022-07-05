@@ -36,6 +36,12 @@ h1 {
 }
 h2 {
 	font-size: 50px;
+	@include breakpoint(max-xl) {
+		font-size: 42px;
+	}
+	@include breakpoint(max-lg) {
+		font-size: 40px;
+	}
 	@include breakpoint(max-md) {
 		font-size: 36px;
 	}
@@ -46,6 +52,12 @@ h2 {
 
 h3 {
 	font-size: 30px;
+	@include breakpoint(max-md) {
+		font-size: 28px;
+	}
+	@include breakpoint(max-sm) {
+		font-size: 24px;
+	}
 }
 h4 {
 	font-size: 24px;
@@ -92,8 +104,17 @@ h6 {
 	font-size: 18px;
 }
 .fs--20px {
-	font-size: 20px;
+	font-size: 18px;
+	@include breakpoint(xl) {
+		font-size: 20px;
+	}
 }
 .fs--22px {
-	font-size: 22px;
+	font-size: 18px;
+	@include breakpoint(sm) {
+		font-size: 20px;
+	}
+	@include breakpoint(xl) {
+		font-size: 22px;
+	}
 }

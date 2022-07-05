@@ -6,7 +6,7 @@ body {
 	margin: 0;
 	font-size: 16px;
 	color: hsl(var(--body));
-	line-height: 1.85;
+	line-height: 1.7;
 	font-family: var(--body-font);
 }
 p {
@@ -30,4 +30,11 @@ sub,
 sup,
 a {
 	display: inline-block;
+}
+
+@include breakpoint(max-sm) {
+	.container,
+	.container-fluid {
+		max-width: 450px;
+	}
 }
