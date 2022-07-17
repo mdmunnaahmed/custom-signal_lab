@@ -75,59 +75,46 @@ $(".scrollToTop").on("click", function () {
 });
 
 $(".testimonial-slider").slick({
-	fade: false,
-	slidesToShow: 3,
+	speed: 20000,
+	autoplay: true,
+	autoplaySpeed: 0,
+	cssEase: "linear",
+	rows: 2,
+	slidesPerRow: 2,
+	slidesToShow: 1,
 	slidesToScroll: 1,
 	infinite: true,
-	autoplay: true,
-	pauseOnHover: true,
-	centerMode: false,
-	dots: true,
+	pauseOnHover: false,
+	vertical: true,
+	verticalSwiping: false,
+	dots: false,
 	arrows: false,
 	nextArrow: '<i class="las la-arrow-right arrow-right"></i>',
 	prevArrow: '<i class="las la-arrow-left arrow-left"></i> ',
+	// mobileFirst: true,
 	responsive: [
 		{
-			breakpoint: 1199,
+			breakpoint: 768,
 			settings: {
-				slidesToShow: 3,
-			},
-		},
-		{
-			breakpoint: 992,
-			settings: {
-				slidesToShow: 2,
-			},
-		},
-		{
-			breakpoint: 767,
-			settings: {
+				rows: 1,
+				slidesPerRow: 1,
+				vertical: false,
 				slidesToShow: 1,
+				slidesToScroll: 1,
 			},
 		},
 		{
 			breakpoint: 575,
 			settings: {
-				slidesToShow: 1,
+				rows: 1,
+				slidesPerRow: 1,
+				vertical: false,
 			},
 		},
 	],
 });
 
-// Odometer Counter
-let counter = $(".counter-item");
-if (counter) {
-	counter.each(function () {
-		$(this).isInViewport(function (status) {
-			if (status === "entered") {
-				for (var i = 0; i < document.querySelectorAll(".odometer").length; i++) {
-					var el = document.querySelectorAll(".odometer")[i];
-					el.innerHTML = el.getAttribute("data-odometer-final");
-				}
-			}
-		});
-	});
-}
+$(".single-slide").parent("div").addClass("single-slide-wrapper");
 
 //Faq
 $(".faq-item__title").on("click", function (e) {
@@ -147,7 +134,6 @@ $(".faq-item__title").on("click", function (e) {
 
 $(".video-button").magnificPopup({
 	type: "iframe",
-	// other options
 });
 
 var path = location.pathname.split("/");
@@ -158,14 +144,8 @@ $(".menu li a").each(function () {
 	}
 });
 
-let num_1 = 5;
-let num_2 = 3;
-let num = "";
-for (num = num_2; num > 1; num--) {
-	if (num_1 % num == 0 && num_2 % num == 0) {
-		num_1 = num_1 / num;
-		num_2 = num_2 / num;
-	}
+var count = $(".item-wrapper").children().length;
+if (count >= 7) {
+	$(".item-wrapper .single-item:nth-child(5)").addClass("item-five");
+	$(".item-wrapper .single-item:nth-child(6)").addClass("item-six");
 }
-var ratio = num_1 + ":" + num_2;
-console.log(ratio);

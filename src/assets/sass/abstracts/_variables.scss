@@ -10,9 +10,6 @@
 	--body: 223 22% 41%;
 	--border: 0 0% 90%;
 
-	color: hsl(256, 72%, 11%);
-	color: hsl(168, 99%, 35%);
-	color: hsl(342, 100%, 56%);
 	// Base Color Shade
 	--base-h: 342;
 	--base-s: 100%;
@@ -57,8 +54,8 @@
 	--white: 0 0% 100%;
 
 	// Light Color Shade
-	--light-h: 238;
-	--light-s: 33%;
+	--light-h: 258;
+	--light-s: 23%;
 	--light-l: 97%;
 	--light-50: var(--light-h) var(--light-s) calc(var(--light-l) + 33%);
 	--light-100: var(--light-h) var(--light-s) calc(var(--light-l) + 20%);

@@ -14,3 +14,17 @@
 		transform: translateX(0);
 	}
 }
+@keyframes pulse-center {
+	0% {
+		-webkit-transform: translate(-50%, -50%) scaleX(1);
+		transform: translate(-50%, -50%) scaleX(1);
+	}
+	50% {
+		-webkit-transform: translate(-50%, -50%) scale3d(1.1, 1.1, 1.1);
+		transform: translate(-50%, -50%) scale3d(1.1, 1.1, 1.1);
+	}
+	to {
+		-webkit-transform: translate(-50%, -50%) scaleX(1);
+		transform: translate(-50%, -50%) scaleX(1);
+	}
+}
