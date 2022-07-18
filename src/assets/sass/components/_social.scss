@@ -1,0 +1,26 @@
+// Social Icons Css
+.social-links {
+    gap: 8px;
+	li {
+		a {
+            color: hsl(var(--base));
+		}
+	}
+	&.social-round {
+		li {
+			i {
+				width: 40px;
+				height: 40px;
+				@extend %f-center;
+				color: hsl(var(--base));
+				border-radius: 50%;
+			}
+		}
+	}
+	&.social-bg {
+		i[class*="facebook"] {
+			background-color: hsl(var(--base));
+		}
+	}
+}
+// Social Icons Css

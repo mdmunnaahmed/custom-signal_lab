@@ -430,3 +430,71 @@
 	}
 }
 // Faq Section
+
+// Subscription Section
+.subscription-section {
+	&::before {
+		@extend %p-set;
+		background: linear-gradient(270deg, hsl(var(--accent-100) / 0.7) 0%, hsl(var(--accent-200) / 0.85) 100%);
+	}
+	.container {
+		position: relative;
+		z-index: 1;
+	}
+}
+.subscription-form {
+	max-width: 550px;
+	margin: 0 auto;
+	.form--control {
+		border-radius: 0;
+	}
+	.btn {
+		border-radius: 0;
+		@include breakpoint(max-sm) {
+			width: 100%;
+			margin: 0 !important;
+			margin-top: 15px !important;
+		}
+	}
+}
+.google-btn {
+	border-radius: 0;
+	color: hsl(var(--white));
+	border-color: #e34133;
+	background-color: #e34133;
+	&:hover {
+		color: #e34133;
+		border: 1px solid hsl(var(--white) / 0.4);
+	}
+}
+.facebook-btn {
+	border-radius: 0;
+	color: hsl(var(--white));
+	border-color: #1773ea;
+	background-color: #1773ea;
+	&:hover {
+		color: #1773ea;
+		border: 1px solid hsl(var(--white) / 0.4);
+	}
+}
+// Subscription Section
+
+
+// Blog Section
+.post-item {
+	&__thumb {
+
+	}
+	&__content {
+		padding: 25px;
+		background: hsl(var(--light));
+		&-title {
+			margin-bottom: 12px;
+			a {
+				@extend %t-wrap;
+				-webkit-line-clamp: 2;
+			}
+		}
+	}
+}
+// Blog Section

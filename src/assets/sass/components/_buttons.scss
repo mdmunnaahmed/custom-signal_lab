@@ -75,6 +75,14 @@ $colors: "primary" hsl(var(--primary)), "secondary" hsl(var(--secondary)), "succ
 	color: hsl(var(--base));
 }
 
+.btn--base {
+	&:hover {
+		border-color: hsl(var(--base));
+		background-color: hsl(var(--base));
+		color: hsl(var(--white));
+	}
+}
+
 @each $name, $color in $colors {
 	.btn--outline-#{$name} {
 		background-color: transparent;

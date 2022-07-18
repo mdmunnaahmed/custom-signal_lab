@@ -1,0 +1,29 @@
+// Footer Section
+.footer-top {
+	border-bottom: 1px solid hsl(var(--white) / 0.2);
+	padding-bottom: 20px;
+}
+.footer-bottom {
+	padding-top: 40px;
+}
+.footer-widget {
+	.links {
+        font-size: 15px;
+		li {
+			padding: 4px 0;
+            @include breakpoint(max-sm) {
+                &:not(:last-child) {
+                    border-bottom: 1px dashed hsl(var(--white) / 0.2);
+                }
+            }
+
+            a {
+                color: hsl(var(--white));
+                &:hover {
+                    color: hsl(var(--base));
+                }
+            }
+		}
+	}
+}
+// Footer Section
