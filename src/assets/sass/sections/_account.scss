@@ -1,0 +1,59 @@
+// Account Section
+.account-section {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	min-height: 100vh;
+	@include breakpoint(lg) {
+	}
+	&__left {
+		width: 100%;
+		max-width: 650px;
+		padding-inline: 100px;
+		@include breakpoint(max-xxl) {
+			max-width: 500px;
+			padding-inline: 50px;
+		}
+		@include breakpoint(max-lg) {
+			max-width: 100%;
+			padding-inline: 100px;
+		}
+		@include breakpoint(max-md) {
+			padding-inline: 50px;
+		}
+		@include breakpoint(max-sm) {
+			padding-inline: 25px;
+		}
+		&.sign-up {
+			max-width: 800px;
+			@include breakpoint(max-xxl) {
+				max-width: 700px;
+				margin: 0 auto;
+			}
+		}
+	}
+	&__right {
+		width: calc(100% - 650px);
+		padding-right: 50px;
+		@include breakpoint(max-xxl) {
+			width: calc(100% - 500px);
+		}
+		@include breakpoint(max-lg) {
+			width: 100%;
+			padding-inline: 100px;
+		}
+		@include breakpoint(max-md) {
+			padding-inline: 50px;
+		}
+		@include breakpoint(max-sm) {
+			padding-inline: 25px;
+		}
+		&.sign-up {
+			width: calc(100% - 800px);
+			@include breakpoint(max-xxl) {
+				width: calc(100% - 700px);
+			}
+		}
+	}
+}
+// Account Section

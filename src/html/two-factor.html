@@ -1,0 +1,64 @@
+<!-- meta tags and other links -->
+@@include('../partial-html/_template-top.html')
+@@include('../partial-html/_header-two.html')
+@@include('../partial-html/_inner-hero.html', {
+pageTitle: "Dashboard",
+})
+
+<section class="pt-100 pb-100 bg-light">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="ticket-card">
+                    <div class="ticket-card__header">
+                        <h5 class="title text-center">Google Authenticator</h5>
+                    </div>
+                    <div class="ticket-card__body">
+                        <div class="form-group mx-auto text-center">
+                            <img class="mx-auto" src="https://chart.googleapis.com/chart?chs=200x200&amp;chld=M|0&amp;cht=qr&amp=otpauth%3A%2F%2Ftotp%2Fusername%40SinaILab%3Fsecret%3DHSR3AI7UQTEBFYTJ">
+                            <p class="fs--14px mt-2">Use Google Authentication App to scan the QR code. <a class="text--base" href="" target="_blank">App Link</a></p>
+                        </div>
+                        <div class="input-group mt-3 mt-sm-4">
+                            <input type="text" name="key" value="HSR3AI7UQTEBFYTJ" class="form--control form-control" id="referralURL" readonly>
+                            <button class="input-group-text border--base bg--base text-white copytext" id="copyBoard"> <i class="fa fa-copy"></i> </button>
+                        </div>
+
+                        <button type="button" class="btn btn--base w-100 mt-3 mt-sm-4" data-bs-toggle="modal" data-bs-target="#enableModal">Enable 2FA Authenticator </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Enable Modal -->
+<div id="enableModal" class="modal fade" role="dialog">
+    <div class="modal-dialog ">
+        <!-- Modal content-->
+        <div class="modal-content ">
+            <div class="modal-header">
+                <h5 class="modal-title">Verify Your Otp</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="">
+                <div class="modal-body ">
+                    <div class="form-group">
+                        <input type="text" class="form--control form-control" name="code" placeholder="Enter Google Authenticator Code">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn--danger btn--sm" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn--success btn--sm">Verify</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+
+@@include('../partial-html/_footer.html')
+@@include('../partial-html/_template-bottom.html')
+</body>
+
+</html>

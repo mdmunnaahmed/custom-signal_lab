@@ -1,0 +1,257 @@
+<!-- meta tags and other links -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Site Titlte Here</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" sizes="16x16">
+    <!-- bootstrap 5  -->
+    <link rel="stylesheet" href="assets/css/lib/bootstrap.min.css">
+    <!-- Icon Link  -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/lib/animate.css">
+
+    <!-- Plugin Link -->
+    <link rel="stylesheet" href="assets/css/lib/slick.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <!-- Overlay -->
+    <div class="overlay"></div>
+    <a href="javascript::void(0)" class="scrollToTop"><i class="las la-chevron-up"></i></a>
+<div class="header">
+    <div class="container">
+        <div class="header-bottom">
+            <div class="header-bottom-area align-items-center">
+                <div class="logo"><a href="index.html"><img src="./assets/images/logo.png" alt="logo"></a></div>
+                <ul class="menu">
+                    <li>
+                        <a href="dashboard.html">Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">Deposit</a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="deposit.html">Deposit</a>
+                                <a href="deposit-history.html">Deposit History</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="plan.html">Package</a>
+                    </li>
+                    <li>
+                        <a href="signal-history.html">Signal History</a>
+                    </li><li>
+                        <a href="javascript:void(0)">Support</a>
+                        <ul class="sub-menu">
+                            <li><a href="create-ticket.html">Create Ticket</a></li>
+                            <li><a href="my-tickets.html">My Tickets</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">Account</a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="profile.html">Profile</a>
+                            </li>
+                            <li>
+                                <a href="two-factor.html">Two Factor</a>
+                            </li>
+                            <li>
+                                <a href="change-pass.html">Change Password</a>
+                            </li>
+                            <li>
+                                <a href="#0">Logout</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="header-trigger-wrapper d-flex d-lg-none align-items-center">
+                    <div class="header-trigger">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- inner hero section start -->
+<section class="inner-banner bg_img position-relative" style="background: url('assets/images/bg/bg2.png') center;">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-7 col-xl-6 text-center">
+        <h3 class="title text-white">Dashboard</h3>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- inner hero section end -->
+
+<section class="pt-100 pb-100 bg-light">
+    <div class="container">
+        <div class="row gy-4 justify-content-center">
+            <div class="col-lg-4 col-md-8">
+                <div class="ticket-card">
+                    <div class="ticket-card__body">
+                        <div class="thumb position-relative">
+                            <img src="assets/images/thumb/user4.jpg" alt="thumb" class="w-100">
+                            <input type="file" class="form-control d-none " id="update-photo">
+                            <label class="btn btn--base btn--sm profile-upload" for="update-photo"><i class="fas fa-pen"></i></label>
+                        </div>
+                        <div class="text-center mt-3">
+                            <h4 class="name">Taposhi Ahmed</h4>
+                            <p class="username">@taposhi123</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="ticket-card">
+                    <div class="ticket-card__body">
+                        <div class="row gy-3">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="fname" class="form-label">First Name</label>
+                                    <input id="fname" type="text" class="form-control form--control" placeholder="testuser">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="lname" class="form-label">Last Name</label>
+                                    <input id="lname" type="text" class="form-control form--control" placeholder="testuser">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input id="email" type="email" class="form-control form--control" placeholder="testuser@gmail.com">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="username" class="form-label">Username</label>
+                                    <input id="username" type="email" class="form-control form--control" placeholder="username">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="number" class="form-label">Phone Number</label>
+                                    <input id="number" type="tel" class="form-control form--control" placeholder="ex. +09 283 195 145">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="country" class="form-label">Country</label>
+                                    <input id="country" type="text" class="form-control form--control" placeholder="Bangladesh">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="city" class="form-label">City</label>
+                                    <input id="city" type="text" class="form-control form--control" placeholder="Dhaka">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="zip" class="form-label">Zip Code</label>
+                                    <input id="zip" type="text" class="form-control form--control" placeholder="1230">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn--base w-100 mt-2">Update Profile</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="footer-section pt-50 pb-50 bg--accent">
+    <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-between footer-top gap-3">
+            <a href="index.html" class="logo"><img src="assets/images/logo.png" alt="logo"></a>
+            <ul class="social-links d-flex flex-wrap fs--22px">
+                <li><a href=""><i class="lab la-facebook-f"></i></a></li>
+                <li><a href=""><i class="lab la-twitter"></i></a></li>
+                <li><a href=""><i class="lab la-instagram"></i></a></li>
+                <li><a href=""><i class="lab la-pinterest-p"></i></a></li>
+                <li><a href=""><i class="lab la-vimeo-v"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <div class="row gy-4 gy-sm-5">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer-widget">
+                        <h4 class="footer-widget__title text-white mb-2 mb-lg-4">Important Links</h4>
+                        <ul class="links">
+                            <li><a href="sign-up.html">Create Account</a></li>
+                            <li><a href="Sign in">Login</a></li>
+                            <li><a href="blog.html">Latest Blog</a></li>
+                            <li><a href="plan.html">See Plans</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer-widget">
+                        <h4 class="footer-widget__title text-white mb-2 mb-lg-4">Information</h4>
+                        <ul class="links">
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="faq.html">FAQs</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer-widget">
+                        <h4 class="footer-widget__title text-white mb-2 mb-lg-4">Other Links</h4>
+                        <ul class="links">
+                            <li><a href="policy.html">Data Policy</a></li>
+                            <li><a href="policy.html">Privacy Policy</a></li>
+                            <li><a href="policy.html">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer-widget">
+                        <h4 class="footer-widget__title text-white mb-2 mb-lg-4">Contact Us</h4>
+                        <ul class="links">
+                            <li><a href="mailto:demouser@gmail.com"><i class="las la-envelope"></i> demo.userl@gmail.com</a></li>
+                            <li><a href="tel:012345"><i class="las la-phone-volume"></i> +19 02 345 150</a></li>
+                            <li>
+                                <p class='fs--15px mt-1 mt-sm-0 text-white'>dBlock Media Ltd - 67
+                                    Rajkumar Street, Houseful House,
+                                    Grand Antartika, KY1-1111,
+                                    Antartika Islands.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer Section -->
+<!-- jQuery library -->
+<script src="assets/js/lib/jquery-3.6.0.min.js"></script>
+
+<!-- Bootstrap 5 js -->
+<script src="assets/js/lib/bootstrap.min.js"></script>
+
+<!-- Pluglin Link -->
+<script src="assets/js/lib/slick.min.js"></script>
+
+<!-- Main js -->
+<script src="assets/js/main.js"></script>
+</body>
+
+</html>

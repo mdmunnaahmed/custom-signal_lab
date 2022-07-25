@@ -1,0 +1,53 @@
+<!-- meta tags and other links -->
+@@include('../partial-html/_template-top.html')
+@@include('../partial-html/_header-two.html')
+@@include('../partial-html/_inner-hero.html', {
+pageTitle: "Dashboard",
+})
+
+<section class="pt-100 pb-100">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="custom--card">
+                    <div class="card-body">
+                        <form action="">
+                            <div class="row gy-3">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label class="form-label" for="password">Current Password</label>
+                                        <input id="password" type="password" class="form-control form--control" name="current_password" required="" autocomplete="off" placeholder="Current password">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group hover-input-popup">
+                                        <label class="form-label" for="password">Password</label>
+                                        <input id="password" type="password" class="form-control form--control" name="password" required="" autocomplete="off" placeholder="Enter new password">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label class="form-label" for="confirm_password">Confirm Password</label>
+                                        <input id="password_confirmation" type="password" class="form-control form--control" name="password_confirmation" required="" autocomplete="off" placeholder="Confirm password">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <input type="submit" class="mt-2 btn btn--success w-100 text-center" value="Change Password">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+@@include('../partial-html/_footer.html')
+@@include('../partial-html/_template-bottom.html')
+</body>
+
+</html>

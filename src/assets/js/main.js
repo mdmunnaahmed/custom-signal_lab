@@ -13,6 +13,7 @@ if (trigger || dropdown) {
 		$(this).on("click", function (e) {
 			e.stopPropagation();
 			dropdown.slideToggle();
+			trigger.toggleClass("active");
 		});
 	});
 	dropdown.each(function () {
@@ -23,6 +24,7 @@ if (trigger || dropdown) {
 	$(document).on("click", function () {
 		if (parseInt(screenSize) < parseInt(991)) {
 			dropdown.slideUp();
+			trigger.removeClass("active");
 		}
 	});
 }
@@ -75,40 +77,21 @@ $(".scrollToTop").on("click", function () {
 });
 
 $(".testimonial-slider").slick({
-	speed: 20000,
+	speed: 3000,
 	autoplay: true,
-	autoplaySpeed: 0,
+	autoplaySpeed: 2000,
 	cssEase: "linear",
-	rows: 2,
-	slidesPerRow: 2,
-	slidesToShow: 1,
+	slidesToShow: 2,
 	slidesToScroll: 1,
 	infinite: true,
-	pauseOnHover: false,
-	vertical: true,
-	verticalSwiping: false,
 	dots: false,
 	arrows: false,
-	nextArrow: '<i class="las la-arrow-right arrow-right"></i>',
-	prevArrow: '<i class="las la-arrow-left arrow-left"></i> ',
 	// mobileFirst: true,
 	responsive: [
 		{
 			breakpoint: 768,
 			settings: {
-				rows: 1,
-				slidesPerRow: 1,
-				vertical: false,
 				slidesToShow: 1,
-				slidesToScroll: 1,
-			},
-		},
-		{
-			breakpoint: 575,
-			settings: {
-				rows: 1,
-				slidesPerRow: 1,
-				vertical: false,
 			},
 		},
 	],
@@ -130,10 +113,6 @@ $(".faq-item__title").on("click", function (e) {
 		element.siblings(".faq-item").removeClass("open");
 		element.siblings(".faq-item").find(".faq-item__content").slideUp(300, "swing");
 	}
-});
-
-$(".video-button").magnificPopup({
-	type: "iframe",
 });
 
 var path = location.pathname.split("/");

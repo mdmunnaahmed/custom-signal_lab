@@ -33,6 +33,7 @@
 				padding: 20px 15px;
 				border-width: 1px;
 				font-family: var(--heading-font);
+				border-bottom: 1px solid hsl(var(--light)) !important;
 				&::before {
 					content: attr(data-label);
 					font-family: var(--heading-font);
@@ -47,9 +48,6 @@
 				&:last-child {
 					text-align: right;
 				}
-			}
-			&:nth-child(even) {
-				background: hsl(var(--light));
 			}
 		}
 	}
@@ -86,6 +84,9 @@
 					&::before {
 						display: block;
 					}
+				}
+				&:nth-child(even) {
+					background: hsl(var(--light));
 				}
 			}
 		}
@@ -127,6 +128,9 @@
 						display: block;
 					}
 				}
+				&:nth-child(even) {
+					background: hsl(var(--light));
+				}
 			}
 		}
 	}
@@ -166,6 +170,9 @@
 					&::before {
 						display: block;
 					}
+				}
+				&:nth-child(even) {
+					background: hsl(var(--light));
 				}
 			}
 		}

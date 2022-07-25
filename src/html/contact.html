@@ -1,0 +1,80 @@
+<!-- meta tags and other links -->
+@@include('../partial-html/_template-top.html')
+@@include('../partial-html/_header.html')
+@@include('../partial-html/_inner-hero.html', {
+pageTitle: "Contact Us",
+})
+
+<!-- Contact Section -->
+<div class="contact-section pt-100 pb-100">
+    <div class="container">
+        <div class="row gy-5 justify-content-between">
+            <div class="col-lg-6">
+                <div class="form-wrapper">
+                    <h3 class="mb-2 mb-sm-3">Let's talk!</h3>
+                    <p class="mb-3 mb-sm-4">Have a question or require specialist assistance? Our customer service team who are available 24/7 to assist you!</p>
+                    <form action="">
+                        <div class="form-group mb-3">
+                            <label class="form-label">Name</label>
+                            <input type="text" class="form-control form--control" placeholder="Your Name">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="text" class="form-control form--control" placeholder="Your Email">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label class="form-label">Message</label>
+                            <textarea class="form-control form--control" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--base">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <ul class="contact-info-wrapper d-flex flex-column ">
+                    <li class="contact-info">
+                        <div class="contact-info__icon">
+                            <i class="las la-envelope-open"></i>
+                        </div>
+                        <div class="contact-info__content">
+                            <h6 class="title">Email Address</h6>
+                            <a href="mailto:demo@gmail.com">thecompay@gmail.com</a>
+                        </div>
+                    </li>
+                    <li class="contact-info">
+                        <div class="contact-info__icon">
+                            <i class="las la-phone-volume"></i>
+                        </div>
+                        <div class="contact-info__content">
+                            <h6 class="title">Phone Number</h6>
+                            <a href="mailto:demo@gmail.com">+ 33 123 354 734</a>
+                        </div>
+                    </li>
+                    <li class="contact-info">
+                        <div class="contact-info__icon">
+                            <i class="las la-map-marked-alt"></i>
+                        </div>
+                        <div class="contact-info__content">
+                            <h6 class="title">Address</h6>
+                            <p>26th Floor, Beautiful Group Tower, 77 Connaught Road Central, Central Hong Kong</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="mt-4 pt-3">
+                    <h4 class="mb-3">Find us on social media:</h4>
+                    <p class="d-flex mb-3 align-items-center"><img src="assets/images/icon/youtube.png"  width="22px" alt="youtube" class="me-2"><a href="" target="_blank" class="youtube">/signalsLab</a></p>
+                    <p class="d-flex mb-3 align-items-center"><img src="assets/images/icon/facebook2.png" width="22px"  alt="facebook" class="me-2"><a href="" target="_blank" class="facebook">/signalsLab</a></p>
+                    <p class="d-flex mb-3 align-items-center"><img src="assets/images/icon/instagram.png" width="22px"  alt="instagram" class="me-2"> <a href="" target="_blank" class="instagram">/signalsLab</a></p>
+                    <p class="d-flex align-items-center"><img src="assets/images/icon/support.png" width="22px"  alt="instagram" class="me-2"><a href="mailto:support@signalsdemo.com">support@signalsdemo.com</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Contact Section -->
+
+@@include('../partial-html/_footer.html')
+@@include('../partial-html/_template-bottom.html')
+</body>
+
+</html>

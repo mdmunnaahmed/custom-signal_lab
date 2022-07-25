@@ -1,0 +1,55 @@
+.sidebar {
+	position: sticky;
+	top: 100px;
+	@extend %flex;
+	flex-flow: column;
+	gap: 24px;
+}
+.sidebar-item {
+	> .title {
+		border-radius: 5px 5px 0 0;
+		padding: 15px;
+		background-color: hsl(var(--dark)/.1);
+	}
+	> .content {
+		background-color: hsl(var(--border) / 0.4);
+		padding: 15px;
+		@include breakpoint(xxl) {
+			padding: 25px;
+		}
+	}
+}
+
+.sidebar-search {
+	.form-group {
+		position: relative;
+		.btn {
+			position: absolute;
+			right: 0;
+			top: 0;
+			height: 100%;
+			color: hsl(var(--body));
+		}
+	}
+}
+
+.news-item {
+	&:not(:last-child) {
+		margin-bottom: 24px;
+	}
+	.title a {
+		@extend %t-wrap;
+		-webkit-line-clamp: 2;
+	}
+	.thumb {
+		width: 90px;
+		height: 70px;
+		flex-shrink: 0;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			border-radius: 5px;
+		}
+	}
+}

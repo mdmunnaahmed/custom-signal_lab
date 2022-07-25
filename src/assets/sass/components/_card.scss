@@ -1,8 +1,9 @@
 .custom--card {
-	border: 1px solid hsl(var(--border));
 	border-radius: 5px;
 }
-
+.custom--card .card-header {
+	border-radius: 5px 5px 0 0;
+}
 .custom--card .card-header,
 .custom--card .card-footer {
 	background: hsl(var(--base));
@@ -25,6 +26,8 @@
 }
 .custom--card .card-body {
 	padding: 25px;
+	border: 1px solid hsl(var(--border));
+	border-radius: 0 0 5px 5px;
 	@include breakpoint(max-sm) {
 		padding: 20px;
 	}

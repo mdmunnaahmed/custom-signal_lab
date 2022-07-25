@@ -90,3 +90,23 @@
 	transform: translateX(100%);
 }
 // Banner Section
+
+// Inner Banner
+.inner-banner {
+	padding: 110px 0px 60px;
+	@include breakpoint(max-md) {
+		padding-top: 100px;
+	}
+	@include breakpoint(max-sm) {
+		padding-top: 80px;
+	}
+	.container {
+		position: relative;
+		z-index: 1;
+	}
+	&::before {
+		@extend %p-set;
+		background: linear-gradient(135deg, hsl(var(--accent-300) / 0.7) 0%, hsl(var(--accent-400) / 0.85) 100%);
+	}
+}
+// Inner Banner

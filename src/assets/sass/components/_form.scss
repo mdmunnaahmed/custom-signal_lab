@@ -1,18 +1,39 @@
 .form-label {
-	font-size: 15px;
+	font-size: 14px;
 }
 .form--control {
-	height: 50px;
-	border-radius: 5px;
-	border: 1px solid hsl(var(--border));
+	height: 45px;
+	border-radius: 0;
+	border: 2px solid hsl(var(--border));
 	outline: 0 !important;
 	box-shadow: none !important;
+	font-size: 14px;
+	background-color: hsl(var(--light));
 	&:focus {
-		border: 1px solid hsl(var(--base));
+		border-color: hsl(var(--base));
+	}
+}
+.form--control:read-only {
+	border-color: hsl(var(--border));
+}
+input.form--control[type="file"] {
+	background-color: hsl(var(--light));
+	border: 0;
+	&::-webkit-file-upload-button {
+		line-height: 30px;
+		padding-inline: 15px;
+		color: hsl(var(--white));
+		background: hsl(var(--base-300)) !important;
+		border-radius: 5px;
+	}
+	&:hover {
+		&::-webkit-file-upload-button {
+			background: hsl(var(--base-500)) !important;
+		}
 	}
 }
 textarea.form--control {
-	height: 130px;
+	height: 100px;
 }
 
 input:autofill,
@@ -51,7 +72,7 @@ input:-webkit-autofill:focus {
 		margin-bottom: 0;
 		position: relative;
 		padding-left: 20px;
-		font-size: rem(14px);
+		font-size: 14px;
 		font-weight: 400;
 		&::before {
 			position: absolute;
@@ -75,7 +96,7 @@ input:-webkit-autofill:focus {
 	}
 }
 .custom--checkbox {
-	padding-left: rem(25px);
+	padding-left: 25px;
 	input {
 		display: none;
 		&:checked {
@@ -89,7 +110,7 @@ input:-webkit-autofill:focus {
 	}
 	label {
 		position: relative;
-		font-size: rem(15px);
+		font-size: 15px;
 		font-weight: 400;
 		cursor: pointer;
 		margin-bottom: 0;
@@ -99,8 +120,8 @@ input:-webkit-autofill:focus {
 			font-family: "Line Awesome Free";
 			font-weight: 900;
 			top: 3px;
-			left: rem(-25px);
-			font-size: rem(20px);
+			left: -25px;
+			font-size: 20px;
 			line-height: 1;
 			@extend %transition;
 		}
