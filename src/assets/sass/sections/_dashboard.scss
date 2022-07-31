@@ -10,6 +10,7 @@
 		height: 50px;
 		@extend %f-center;
 		font-size: 42px;
+		color: hsl(var(--base));
 	}
 	&__content {
 		width: calc(100% - 50px);

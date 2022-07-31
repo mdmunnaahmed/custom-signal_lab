@@ -497,6 +497,12 @@
 
 // Blog Section
 .post-item {
+	&__thumb {
+		img {
+			min-height: 280px;
+			object-fit: cover;
+		}
+	}
 	&__content {
 		padding: 25px;
 		background: hsl(var(--light));
